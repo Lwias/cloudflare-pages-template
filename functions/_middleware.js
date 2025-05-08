@@ -19,7 +19,7 @@ export async function onRequest(context) {
 
   // Metatags Variables (edit these!)
   const metatitle = "Eras Hukuk ve Danışmanlık"
-  const metadescription = "Ankara merkezli Eras Hukuk Bürosu, ceza hukuku, ticaret hukuku ve aile hukuku alanlarında uzman avukatlık ve danışmanlık hizmetleri sunar."
+  const metadescription = "Ankara merkezli Eras Hukuk ve Danışmanlık olarak ceza hukuku, ticaret hukuku ve aile hukuku alanlarında uzman avukatlık ve danışmanlık hizmetleri sunmaktayız."
 
   let name = searchParams.get('myQuery')
   let ogtag
