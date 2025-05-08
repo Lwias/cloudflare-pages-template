@@ -85,11 +85,27 @@
 					Eras Hukuk / Danışmanlık Instagram Sayfası
 				</h1>
 				<div class="text-center">
-					<a class="btn btn-orange" 
-   href="https://instagram.com/erashukukdanismanlik" 
-   style="background-color: black; color: white;">
+					<a href="https://instagram.com/erashukukdanismanlik" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   style="
+     background-color: #444;         /* hafif gri-siyah arası */
+     color: white; 
+     padding: 10px 25px; 
+     border-radius: 999px;           /* full oval */
+     text-decoration: none; 
+     display: inline-block;
+     font-family: sans-serif;
+     transition: background-color 0.3s ease;">
   @erashukukdanismanlik
 </a>
+
+<script>
+  // Hover efekti için inline JS çözümü (sadece HTML'le yetinmek isteyenler için)
+  const button = document.querySelector('a[href*="instagram.com/erashukukdanismanlik"]');
+  button.addEventListener('mouseover', () => button.style.backgroundColor = '#666'); // açık gri
+  button.addEventListener('mouseout', () => button.style.backgroundColor = '#444');  // orijinal koyu gri
+</script>
 			</div>
 			<div class="offset-md-2 col-md-8 col-lg-8 offset-lg-2">
 				<div class="mx-auto d-block blocsapp-device blocsapp-device-mb mb-space-grey">
