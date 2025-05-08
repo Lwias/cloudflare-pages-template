@@ -8,6 +8,21 @@
   <url>
     <loc>https://eraslaw.com/</loc>
     <lastmod>2025-05-08T12:00:00+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Diğer sayfalarınızı buraya ekleyebilirsiniz -->
+  <!-- Örnek olarak aşağıdaki satırları kullanabilirsiniz -->
+  <url>
+    <loc>https://eraslaw.com/about</loc>
+    <lastmod>2025-05-08T12:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://eraslaw.com/contact</loc>
+    <lastmod>2025-05-08T12:00:00+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
 
 </urlset>
