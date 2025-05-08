@@ -17,9 +17,10 @@ export async function onRequest(context) {
     return res
   }
 
-  // Metatags Variables (edit these!)
+  // Metatags Variables
   const metatitle = "Eras Hukuk ve Danışmanlık"
   const metadescription = "Ankara merkezli Eras Hukuk ve Danışmanlık olarak ceza hukuku, ticaret hukuku ve aile hukuku alanlarında uzman avukatlık ve danışmanlık hizmetleri sunmaktayız."
+  const metakeywords = "eras hukuk, eraslaw, danışmanlık, avukat, ceza hukuku, ticaret hukuku, aile hukuku, hukuk bürosu, Ankara avukat"
 
   let name = searchParams.get('myQuery')
   let ogtag
@@ -41,6 +42,7 @@ export async function onRequest(context) {
     <meta name="twitter:image" content="${request.url}img/erashukuk.png?${name ? 'myQuery=' + name : 'default'}" />
 
     <meta name="description" content="${metadescription}" />
+    <meta name="keywords" content="${metakeywords}" />
   `
 
   return new HTMLRewriter().on('head', new ElementHandler(ogtag)).transform(res)
